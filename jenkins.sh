@@ -16,6 +16,8 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 
 # download java11 and jenkines 
 amazon-linux-extras install java-openjdk11 -y
+#amazon-linux-extras (allows users to easily install additional software packages and versions)
+
 yum install jenkins -y
 update-alternatives --config java
 

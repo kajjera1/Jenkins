@@ -1,0 +1,40 @@
+#jenkins pipeline
+
+* different Types of Pipeline in Jenkins   
+    1. Declarative
+    2. Scripted
+
+#jenkins declarative pipeline
+**SINGLE STAGE:
+
+pipeline {
+    agent any
+    
+    stages{
+        stage('abc') {
+            steps {
+                sh 'touch file2'
+            }
+        }
+    }
+}
+
+
+**MULTI STAGE:
+
+pipeline {
+    agent any
+    
+    stages{
+        stage('abc') {
+            steps {
+                sh 'touch file1'
+            }
+        }
+     stage('abc') {
+            steps {
+                sh 'touch file2'
+            }
+        }
+    }
+}

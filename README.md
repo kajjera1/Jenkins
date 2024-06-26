@@ -9,3 +9,9 @@ Continuous Delivery focuses on ensuring software is always release-ready with ma
 while Continuous Deployment automates the release process, deploying changes to production automatically once tests pass.
 
 Jenkins port no - 8080
+
+
+# different Types of Pipeline in Jenkins 
+  
+    1. Declarative
+    2. Scripted

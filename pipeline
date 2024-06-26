@@ -5,7 +5,8 @@
     2. Scripted
 
 #jenkins declarative pipeline
-**SINGLE STAGE:
+
+**SINGLE STAGE: create a file 
 
 pipeline {
     agent any
@@ -13,14 +14,14 @@ pipeline {
     stages{
         stage('abc') {
             steps {
-                sh 'touch file2'
+                sh 'touch file'
             }
         }
     }
 }
 
 
-**MULTI STAGE:
+**MULTI STAGE: create a file 
 
 pipeline {
     agent any
